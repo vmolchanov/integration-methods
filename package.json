@@ -1,0 +1,14 @@
+{
+  "name": "js-playground",
+  "version": "1.0.0",
+  "description": "Практическое задание по технологической практике",
+  "dependencies": {
+    "browser-sync": "2.27.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "browser-sync start --server --files \"**/*.*\""
+  },
+  "author": "Molchanov Vladislav <Molchanov96@yandex.ru>",
+  "license": "ISC"
+}

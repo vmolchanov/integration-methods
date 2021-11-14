@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Методы численного интегрирования</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <form action="#" class="integral-form">
+                <div class="table-row">
+                    <p class="form-group">
+                        <label for="bottom">Нижняя граница</label>
+                        <input id="bottom" class="limit" type="number" name="bottom" required>
+                    </p>
+                    <p class="form-group">
+                        <label for="top">Верхняя граница</label>
+                        <input id="top" class="limit" type="number" name="top" required>
+                    </p>
+                </div>
+                <p class="form-group">
+                    <label for="segments-count">Количество отрезков</label>
+                    <input id="segments-count" type="number" name="segments-count" required>
+                </p>
+                <button type="submit">Вычислить</button>
+            </form>
+        </div>
+        <div class="styled-table-wrapper">
+            <table id="result" class="styled-table"></table>
+        </div>
+        <canvas id="chart" width="300" height="300"></canvas>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js" integrity="sha512-GMGzUEevhWh8Tc/njS0bDpwgxdCJLQBWG3Z2Ct+JGOpVnEmjvNx6ts4v6A2XJf1HOrtOsfhv3hBKpK9kE5z8AQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
